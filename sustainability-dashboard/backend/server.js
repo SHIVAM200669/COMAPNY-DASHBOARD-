@@ -15,6 +15,7 @@ app.use(express.json()); // for parsing application/json
 app.use('/api/auth', authRoutes);
 app.use('/api/data', dataRoutes);
 
+// Use 5000 for backend
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
